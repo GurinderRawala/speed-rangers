@@ -1,0 +1,7 @@
+.viewer-button {
+    cursor: pointer;
+    color: #fff;
+}
+.viewer-button:hover {
+    color: #777;
+}
