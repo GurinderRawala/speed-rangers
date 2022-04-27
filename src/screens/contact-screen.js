@@ -13,22 +13,22 @@ const ContactScreen = () =>{
         title={"CONTACT"} 
         img="https://static.wixstatic.com/media/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg/v1/fill/w_867,h_504,al_c,q_85,usm_0.66_1.00_0.01/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg"
         />
-        <div className="row justify-content-center pt-5">
-            <div data-aos="fade-right" className="col-sm-6 App-header" style={{minHeight: 550}}>
+        <div className="row justify-content-center pt-5 row-reverse-phone">
+            <div data-aos="fade-right" className="col-sm-12 col-lg-6 App-header" style={{minHeight: 550}}>
                 <ContactForm />
             </div>
-            <div data-aos="fade-up" className="col-sm-4 App-header Lg-link">
+            <div data-aos="fade-up" className="col-sm-12 col-lg-4 App-header text-center contact-page-photo">
                 <img src={img} className="img-fluid" alt="customer-care"/>
             </div>
         </div>
         <div className="container my-container pt-5 my-3 bg-dark text-white">
             <h1>Contact</h1>
             <hr />
-            <p>
+            <div>
                <FaPhoneAlt size={18}/> {ClientInfo.phone}<br/>
                <MdEmail size={18}/>  {ClientInfo.email}<br />
                <FaMap size={18}/>  {ClientInfo.address}
-            </p>
+            </div>
         </div>
         <OfficeAddressMap />
         </>

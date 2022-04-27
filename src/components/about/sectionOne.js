@@ -3,23 +3,22 @@ import { Row } from "react-bootstrap";
 const SectionOne = ({Content}) =>{
     return(
         <div className="container">
-            <Row>
-            <div className="col-sm-6 my-2 pt-5 App-header" style={{minHeight: 500, justifyContent: 'space-evenly'}}>
+            <Row className="row-reverse-phone">
+            <div className="col-sm-12 col-lg-6 my-2 pt-5 App-header" style={{minHeight: 500, justifyContent: 'space-evenly'}}>
             <div 
             className="app-heading" 
             style={
                 {
-                    backgroundImage: `url('${Content.headingImg}')`, 
-                    fontSize: '3.25vw',
+                    backgroundImage: `url('${Content.headingImg}')`
                 }
             }
             >
                 {Content.heading}
             </div>
-            <p>{Content.paragraphOne}</p>
-            <p>{Content.paragraphTwo}</p>
+            <div>{Content.paragraphOne}</div>
+            <div>{Content.paragraphTwo}</div>
             </div>
-            <div data="fade-left" className="col-sm-6 my-2 pt-5">
+            <div data="fade-left" className="col-sm-12 col-lg-6 my-2 pt-5">
                 <img src={Content.img} className="img-fluid" alt="vertical" />
             </div>
             </Row>

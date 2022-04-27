@@ -1,3 +1,4 @@
+import InternationTruck from '../../../media/international-truck.jpg'
 export const Content = {
     backgroundImage: `https://southlandinternationaltrucks.com/wp-content/uploads/2013/12/Black_Lonestar_on_highway_at_dusk_HR1.jpg`,
     sectionOne: {
@@ -16,6 +17,6 @@ export const Content = {
         aliquip id anim cillum. Dolor do amet anim reprehenderit cupidatat ipsum deserunt
         ea quis cillum. Eiusmod mollit aliqua culpa incididunt eu ipsum mollit et. Excepteur 
         deserunt tempor qui duis sint eu quis cillum duis.`,
-        img: `http://www.vhaultrucking.ca/wp-content/uploads/2020/11/Why-Choose-Us.jpg`,
+        img: InternationTruck,
     }
 }

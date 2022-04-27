@@ -9,7 +9,7 @@ const SectionOne = ({ data, title }) =>{
             <p>{data.body}</p>
         </div>
         <div data-aos="fade-up" className="col-sm-12 col-lg-5 pt-5 text-center">
-            <img src={data.img} className="img-fluid" alt="sec-pp"/>
+            <img src={data.img} className="img-thumbnail" alt="sec-pp" style={{height: '100%'}}/>
         </div>
         </div>
         </div>

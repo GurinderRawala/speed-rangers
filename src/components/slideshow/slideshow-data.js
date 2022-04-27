@@ -16,7 +16,7 @@ export const slideShowData = [
         img: img2,
         title: `Dedicated to Excellence`, 
         body: `Check out our Services`,
-        linkPath: `/services`,
+        linkPath: `/`,
         linkName: `SERVICES`
     },
     {
@@ -30,7 +30,7 @@ export const slideShowData = [
       img: img4,
       title: `We're hiring`,
       body: `Apply today and get what you deserve`,
-      linkPath: `/careers`,
+      linkPath: `/career`,
       linkName: `CAREER`
     }
  ];

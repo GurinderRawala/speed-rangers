@@ -10,10 +10,10 @@ const ContactForm = () =>{
         <>
             {/* <ErrorMessage response={res?.response} isLoading={res?.isLoading} /> */}
             <form onSubmit={Submitted}>
-            <div className="container pt-5" 
+            <div className="container pt-5 form-contact-phone" 
             style={{backgroundColor: '#fff'}}
             >
-                <div className='text-left app-heading' style={{ backgroundImage: `url('${img}')`, fontSize: '3.25vw'}}>
+                <div className='text-left app-heading my-3' style={{ backgroundImage: `url('${img}')`}}>
                     CONTACT US
                 </div>
             <div className="row">

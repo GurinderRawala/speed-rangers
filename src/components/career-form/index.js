@@ -26,7 +26,7 @@ const CareerForm = () =>{
         required onChange={handleChange}/><br/><br/>
         <input style={s.input} className='form-control' type="text" name="email_" placeholder="Email *" value={collection.email_ || ''}
          required onChange={handleChange}/><br/><br/>
-        <select className="country_codes" style={s.input} name="country_codes" value ={collection.country_codes || ''}
+        <select className="country_codes form-control" style={s.input} name="country_codes" value ={collection.country_codes || ''}
          onChange={handleChange}></select><br/><br/>
         <input style={s.input} className='form-control' type="text" name="phone" placeholder="Phone *" value ={ collection.phone || ''}
          required onChange={handleChange}/><br/><br/>
@@ -52,7 +52,7 @@ const CareerForm = () =>{
         </select>
 </div>
 <div className="col-sm-6 my-1">
-   <select name="equipment" style={s.input} value={collection.equipment}
+   <select name="equipment" className='form-control' style={s.input} value={collection.equipment}
    onChange={handleChange}>
             <option value="">Please Select</option>
             <option value="Reefer">Reefer</option>

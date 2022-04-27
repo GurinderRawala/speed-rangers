@@ -250,5 +250,12 @@
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-    }
+      }
+      .contact-page-photo{
+        z-index: -1;
+      }
+      .form-contact-phone{
+        margin-top: -500px;
+        z-index: 1;
+      }
   }
