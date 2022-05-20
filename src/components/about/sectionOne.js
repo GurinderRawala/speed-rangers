@@ -6,7 +6,7 @@ const SectionOne = ({Content}) =>{
             <Row className="row-reverse-phone">
             <div className="col-sm-12 col-lg-6 my-2 pt-5 App-header" style={{minHeight: 500, justifyContent: 'space-evenly'}}>
             <div 
-            className="app-heading" 
+            className="app-heading my-3" 
             style={
                 {
                     backgroundImage: `url('${Content.headingImg}')`

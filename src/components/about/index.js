@@ -1,14 +1,18 @@
 import React from "react";
-import PhotoViewer from "../../photo-viewer";
 import { Content } from "./content";
 import SectionOne from "./sectionOne";
+import TopNotchServices from "./top-notch-services";
 const About = () =>{
     return(
         <>
         <SectionOne
         Content={Content.sectionOne} 
         />
-        <PhotoViewer heading={"MEET OUR TEAM"}/>
+        <TopNotchServices 
+        title={"TOP NOTCH SERVICES"} 
+        services={Content.services}
+        img={Content.trailer}
+        />
         </>
     )
 }

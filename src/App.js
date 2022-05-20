@@ -5,17 +5,18 @@ import { BrowserRouter } from 'react-router-dom'
 import AppRouter from './app-router';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 const App = () => {
     AosInit()
     return (
-      <>
+      <Provider store={store}>
          <BrowserRouter>
          <Navbar />
-         <div className='shade'style={{backgroundColor: '#dae416', zIndex: -2, opacity: 0.3}}></div>
          <AppRouter />
          <Footer />
          </BrowserRouter>
-      </>
+      </Provider>
     );
   }
   

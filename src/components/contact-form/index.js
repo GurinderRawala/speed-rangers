@@ -1,74 +1,77 @@
-import React from 'react';
-import { CollectInput } from '../../collect-input';
-import { Submit } from './form-submit';
-import { s } from './style';
-const img = `https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+import React, { useEffect } from "react";
+import { CollectInput } from "../../collect-input";
+import ErrorMessage from "../error-message";
+import { s } from "./contact-styles";
+import { submitForm } from "./submit-form";
 const ContactForm = () =>{
     const {collection, collect} = CollectInput({})
-    const { Submitted } = Submit({collection, collect})
+    const { submit, res } = submitForm({ collection })
+    useEffect(() =>{
+        if(res?.res) collect({type: 'clear', payload: {}})
+        return () => {}
+    }, [collect, res])
     return(
         <>
-            {/* <ErrorMessage response={res?.response} isLoading={res?.isLoading} /> */}
-            <form onSubmit={Submitted}>
-            <div className="container pt-5 form-contact-phone" 
-            style={{backgroundColor: '#fff'}}
-            >
-                <div className='text-left app-heading my-3' style={{ backgroundImage: `url('${img}')`}}>
-                    CONTACT US
-                </div>
+            <ErrorMessage response={res?.res} isLoading={res?.isLoading} err={res?.err}/>
+            <form onSubmit={submit}>
+            <div className="container">
             <div className="row">
-                <div className="col-sm-6 my-2"> 
+                <div className="col-sm-6 contact-spacer">
                 <input 
-                     className='form-control' 
+                    type={'text'} 
+                    className='form-control my-2' 
                     placeholder='First Name' 
                     name="firstname"
                     style={s.input} 
                     value={collection.firstname || ''}
-                    onChange={(e) => collect({payload: e.target.value, type:'firstname'}) }
+                    onChange={(e) => collect({type: 'firstname', payload: e.target.value})}
                     />
                 </div>
-                <div className="col-sm-6 my-2">
+                <div className="col-sm-6 contact-spacer">
                 <input 
-                    className='form-control' 
+                    type={'text'} 
+                    className='form-control my-2' 
                     placeholder='Last Name' 
                     style={s.input} 
                     name="lastname"
                     value={collection.lastname || ''}
-                    onChange={(e) => collect({payload: e.target.value, type:'lastname'})}
+                    onChange={(e) => collect({type: 'lastname', payload: e.target.value})}
                     />
                 </div>
-                <div className="col-sm-6 my-2">
+                <div className="col-sm-6 contact-spacer">
                 <input 
-                    className='form-control' 
+                    type={'text'} 
+                    className='form-control my-2' 
                     placeholder='Phone' 
                     name="phone"
                     style={s.input} 
                     value={collection.phone || ''}
-                    onChange={(e) => collect({payload: e.target.value, type:'phone'}) }
+                    onChange={(e) => collect({type: 'phone', payload: e.target.value})}
                     />
                 </div>
-                <div className="col-sm-6 my-2">
+                <div className="col-sm-6 contact-spacer">
                 <input 
-                    className='form-control' 
+                    type={'text'} 
+                    className='form-control my-2' 
                     placeholder='Email' 
                     name="email"
                     style={s.input} 
                     value={collection.email || ''}
-                    onChange={(e) => collect({payload: e.target.value, type:'email'})}
+                    onChange={(e) => collect({type: 'email', payload: e.target.value})}
                     />
                 </div>
-            <div className="col-sm-12 my-2">
+            <div className="col-sm-12 contact-spacer">
                 <textarea 
                 className="form-control" 
                 style={s.input} 
                 placeholder="Your Message"
                 value={collection.message || ''}
-                onChange={(e) => collect({payload: e.target.value, type:'message'})}
+                onChange={(e) => collect({type: 'message', payload: e.target.value})}
                 />
             </div>
-            <div className="col-sm-12 my-2">
+            <div className="col-sm-12 contact-spacer">
                 <br />
-                <button className='App-button'>Submit</button>
+                <button className="App-button">Submit</button>
             </div>
             </div>
             </div>
@@ -76,5 +79,4 @@ const ContactForm = () =>{
         </>
     )
 }
-
 export default ContactForm

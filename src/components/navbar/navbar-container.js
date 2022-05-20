@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaBars }  from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import NavBarMobile from './navbar-mobile';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateSignal } from '../../redux/signal-slice';
 const NavbarContainer = ({children, title}) =>{
-    const[show, setShow] = useState(false)
+    const { show } = useSelector(state => state.signal)
+    const dispatch = useDispatch()
     const ShowMenu = () =>{
-        setShow(!show)
+        dispatch(updateSignal( !show ))
     }
     return(
-      <div className='theme shadow sticky navbar-fixed-top main-container'>
+      <div className='theme shadow sticky navbar-fixed-top container-fluid'>
         <div className='App-row-flex' style={{justifyContent: 'space-between'}}>
             {title}
             <div className='App-links App-row-flex Lg-link' style={{width: '60%'}}>

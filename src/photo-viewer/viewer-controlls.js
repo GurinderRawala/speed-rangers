@@ -1,6 +1,8 @@
 import React from "react";
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
+import KeypressControlls from "./keypress-controlls";
 const ViewerControlls = ({actionButton}) =>{
+    KeypressControlls({actionButton})
     return(
         <div className="App-row-flex slide-text" style={{justifyContent: 'space-between', top: '48%'}}>
                 <div

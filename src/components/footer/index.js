@@ -4,6 +4,7 @@ import { ClientInfo } from "../../client-information";
 import FooterLogo from "./footer-logo";
 import SocialMedia from '../social-media';
 import Copyrights from './copyright';
+import { FaBuilding, FaTruck } from 'react-icons/fa'
 
 const Footer = () =>{
     return(
@@ -26,7 +27,12 @@ const Footer = () =>{
                     <h2>Visit Us</h2>
                     <hr />
                     <h3>Address</h3>
-                    {ClientInfo.address}
+                    <p>
+                    <FaBuilding /> &nbsp;{ClientInfo.address}
+                    </p>
+                    <p>
+                    <FaTruck /> &nbsp;{ ClientInfo.yardAddress }
+                    </p>
                     <br/>
                     <div style={{marginTop: 55, marginBottom: 55}}>
                     <SocialMedia />
