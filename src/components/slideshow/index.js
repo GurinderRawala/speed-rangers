@@ -5,12 +5,12 @@ import SlideShowContainer from "./slideshow-container"
 const SlideShow = () =>{
     const { Image, Text } = Slide()
     return(
-            <div className="main-container">
-                <SlideShowContainer 
+        <div className="main-container">
+            <SlideShowContainer 
                 Image={Image}
                 Text={Text}
-                />
-            </div>
+            />
+        </div>
      
     )
 }

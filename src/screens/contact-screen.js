@@ -13,57 +13,57 @@ const img = 'https://images.pexels.com/photos/8867433/pexels-photo-8867433.jpeg?
 const ContactScreen = () =>{
     return(
         <>
-        <ScreenHeading 
-        title={"CONTACT"} 
-        img="https://static.wixstatic.com/media/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg/v1/fill/w_867,h_504,al_c,q_85,usm_0.66_1.00_0.01/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg"
-        />
-        <div className="row justify-content-center pt-5 row-reverse-phone">
-            <div data-aos="fade-right" className="col-sm-12 col-lg-6 App-header" style={{minHeight: 550}}>
-                <h1 className="my-3">CONTACT US</h1>
-                <ContactForm />
+            <ScreenHeading 
+                title={"CONTACT"} 
+                img="https://static.wixstatic.com/media/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg/v1/fill/w_867,h_504,al_c,q_85,usm_0.66_1.00_0.01/8e5b03_247d4616cff646978975b2d339ca28bf~mv2.jpg"
+            />
+            <div className="row justify-content-center pt-5 row-reverse-phone">
+                <div data-aos="fade-right" className="col-sm-12 col-lg-6 App-header" style={{minHeight: 550}}>
+                    <h1 className="my-3">CONTACT US</h1>
+                    <ContactForm />
+                </div>
+                <div data-aos="fade-up" className="col-sm-12 col-lg-4 App-header text-center contact-page-photo">
+                    <img src={img} className="img-fluid" alt="customer-care"/>
+                </div>
             </div>
-            <div data-aos="fade-up" className="col-sm-12 col-lg-4 App-header text-center contact-page-photo">
-                <img src={img} className="img-fluid" alt="customer-care"/>
-            </div>
-        </div>
-        <div className="my-container pt-5 my-3 bg-dark text-white" style={{padding: 35}}>
-        <h1>Contact</h1>
-        <hr />
-        <p>
-        <FaPhoneAlt size={18}/> {ClientInfo.phone}<br/>
-        <MdEmail size={18}/>  {ClientInfo.email}<br />
-        </p>
-            <div className="row">
-                <div className="col-sm-6">
-                    <OfficeAddressMap url={addressUrl.office}/>
-                    <div className="text-center">
+            <div className="my-container pt-5 my-3 bg-dark text-white" style={{padding: 35}}>
+                <h1>Contact</h1>
+                <hr />
+                <p>
+                    <FaPhoneAlt size={18}/> {ClientInfo.phone}<br/>
+                    <MdEmail size={18}/>  {ClientInfo.email}<br />
+                </p>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <OfficeAddressMap url={addressUrl.office}/>
+                        <div className="text-center">
                     Office Address
-                    <hr />
-                    <a 
-                    target={'_blank'} 
-                    href={`https://www.google.com/maps/place/${ClientInfo.address}`}
-                    rel="noreferrer"
-                    >
-                     {ClientInfo.address}
-                    </a>
+                            <hr />
+                            <a 
+                                target={'_blank'} 
+                                href={`https://www.google.com/maps/place/${ClientInfo.address}`}
+                                rel="noreferrer"
+                            >
+                                {ClientInfo.address}
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div className="col-sm-6">
-                    <OfficeAddressMap url={addressUrl.yard}/>
-                    <div className="text-center">
+                    <div className="col-sm-6">
+                        <OfficeAddressMap url={addressUrl.yard}/>
+                        <div className="text-center">
                     Yard Address
-                    <hr />
-                    <a 
-                    target={'_blank'} 
-                    href={`https://www.google.com/maps/place/${ClientInfo.yardAddress}`}
-                    rel="noreferrer"
-                    >
-                        {ClientInfo.yardAddress}
-                    </a>
+                            <hr />
+                            <a 
+                                target={'_blank'} 
+                                href={`https://www.google.com/maps/place/${ClientInfo.yardAddress}`}
+                                rel="noreferrer"
+                            >
+                                {ClientInfo.yardAddress}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }

@@ -10,9 +10,9 @@ const OriginalPhotoSection = () =>{
                 <div className="col-sm-6 App-header" style={{justifyContent: 'space-evenly', minHeight: 350}}>
                     <div className="text-center my-2" data-aos="fade-up">
                         <img src={data.logo} 
-                        style={{height: 100}}
-                        className="img-fluid rounded" 
-                        alt="speed rangers logo"/>
+                            style={{height: 100}}
+                            className="img-fluid rounded" 
+                            alt="speed rangers logo"/>
                     </div>
                     <p style={{padding: 25}} data-aos="fade-up">
                         {data.content}

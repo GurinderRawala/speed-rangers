@@ -9,17 +9,17 @@ export const Action = (data, inital) =>{
                 nextIndex: CheckIndex(counter.nextIndex + event),
                 lastIndex: CheckIndex(counter.lastIndex + event)
             }
-            )
+        )
     }    
-        const CheckIndex = (current) =>{
-            if(data.indexOf(data[current]) === -1){ 
-                if(current > data.length - 1 ){
-                   return 0
-                }
-                return data.length - 1
+    const CheckIndex = (current) =>{
+        if(data.indexOf(data[current]) === -1){ 
+            if(current > data.length - 1 ){
+                return 0
             }
-            return current
+            return data.length - 1
         }
+        return current
+    }
     return{
         currentImage: data[counter.currentIndex],
         nextImage: data[counter.nextIndex],

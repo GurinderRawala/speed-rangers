@@ -8,12 +8,12 @@ import NavbarLogo from './navbar-logo';
 const Navbar = () =>{
     return(
         <NavbarContainer
-        title={<NavbarLogo img={logo}/>}
+            title={<NavbarLogo img={logo}/>}
         >
-           <Link to="/">SERVICES</Link>
-           <Link to="/contact">CONTACT</Link>
-           <Link to="/about">ABOUT</Link>
-           <Link to="/career">CAREER</Link>
+            <Link to="/">SERVICES</Link>
+            <Link to="/contact">CONTACT</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/career">CAREER</Link>
         </NavbarContainer>
     )
 }

@@ -8,14 +8,14 @@ import SlideShow from "../components/slideshow";
 const HomeScreen = () =>{
     return(
         <>
-        <div style={{marginTop: -100, zIndex: 1, position: 'relative'}}>
-            <SlideShow />
-        </div>
-        <Introduction />
-        <Services />
-        <OriginalPhotoSection />
-        <WhyChooseUs />
-        <ExperienceOverYears />
+            <div style={{marginTop: -100, zIndex: 1, position: 'relative'}}>
+                <SlideShow />
+            </div>
+            <Introduction />
+            <Services />
+            <OriginalPhotoSection />
+            <WhyChooseUs />
+            <ExperienceOverYears />
         </>
     )
 }

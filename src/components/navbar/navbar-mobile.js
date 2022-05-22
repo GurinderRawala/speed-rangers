@@ -6,14 +6,14 @@ const NavBarMobile = ({children}) =>{
     const dispatch = useDispatch()
     return(
         <div className='dropdown-shade'>
-         <div 
-         className='dropdown-links theme App-links shadow pt-3' 
-         onClick={() => dispatch(updateSignal(false))} 
-         style={{backgroundColor: '#000000'}}>
-              { children }
-              <br />
-              <SocialMedia />
-        </div>
+            <div 
+                className='dropdown-links theme App-links shadow pt-3' 
+                onClick={() => dispatch(updateSignal(false))} 
+                style={{backgroundColor: '#000000'}}>
+                { children }
+                <br />
+                <SocialMedia />
+            </div>
         </div>
     )
 }

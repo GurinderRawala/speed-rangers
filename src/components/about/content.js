@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import speedRangerTrailer from '../../media/rangers-trailer.jpeg'
 import { FaTruck, FaTemperatureLow, FaTrailer, FaBox, FaUserAlt } from 'react-icons/fa'
 import { BsHeadset } from 'react-icons/bs'

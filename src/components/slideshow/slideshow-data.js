@@ -5,11 +5,11 @@ import img2 from '../../media/world-image.jpg';
 import img4 from '../../media/logistics-tracking.png';
 export const slideShowData = [ 
     { 
-      img: img1, 
-      title: `We're always at your Service`, 
-      body: `Call ${ClientInfo.phone}`,
-      linkPath: `/contact`,
-      linkName: `CONTACT`
+        img: img1, 
+        title: `We're always at your Service`, 
+        body: `Call ${ClientInfo.phone}`,
+        linkPath: `/contact`,
+        linkName: `CONTACT`
 
     }, 
     {
@@ -20,17 +20,17 @@ export const slideShowData = [
         linkName: `SERVICES`
     },
     {
-      img: img3,
-      title: `Delivering Success`, 
-      body: `Top class service delivered over years`,
-      linkPath: `/about`,
-      linkName: `ABOUT`
+        img: img3,
+        title: `Delivering Success`, 
+        body: `Top class service delivered over years`,
+        linkPath: `/about`,
+        linkName: `ABOUT`
     },
     {
-      img: img4,
-      title: `We're hiring`,
-      body: `Apply today and get what you deserve`,
-      linkPath: `/career`,
-      linkName: `CAREER`
+        img: img4,
+        title: `We're hiring`,
+        body: `Apply today and get what you deserve`,
+        linkPath: `/career`,
+        linkName: `CAREER`
     }
- ];
+];

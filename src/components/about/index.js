@@ -5,14 +5,14 @@ import TopNotchServices from "./top-notch-services";
 const About = () =>{
     return(
         <>
-        <SectionOne
-        Content={Content.sectionOne} 
-        />
-        <TopNotchServices 
-        title={"TOP NOTCH SERVICES"} 
-        services={Content.services}
-        img={Content.trailer}
-        />
+            <SectionOne
+                Content={Content.sectionOne} 
+            />
+            <TopNotchServices 
+                title={"TOP NOTCH SERVICES"} 
+                services={Content.services}
+                img={Content.trailer}
+            />
         </>
     )
 }

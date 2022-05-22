@@ -10,14 +10,14 @@ import store from './redux/store';
 const App = () => {
     AosInit()
     return (
-      <Provider store={store}>
-         <BrowserRouter>
-         <Navbar />
-         <AppRouter />
-         <Footer />
-         </BrowserRouter>
-      </Provider>
+        <Provider store={store}>
+            <BrowserRouter>
+                <Navbar />
+                <AppRouter />
+                <Footer />
+            </BrowserRouter>
+        </Provider>
     );
-  }
+}
   
-  export default App
+export default App

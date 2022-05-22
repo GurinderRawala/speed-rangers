@@ -23,7 +23,7 @@ export const Content = {
         prompt, and catering to your diverse truckload at the most budget-friendly prices. We 
         are always dedicated to provide top-notch service at best prices.`,
     },
-     backImg: {
-         backgroundImage: `url('https://www.pexels.com/photo/road-between-green-leafed-trees-59512/')`
-     }
+    backImg: {
+        backgroundImage: `url('https://www.pexels.com/photo/road-between-green-leafed-trees-59512/')`
+    }
 }

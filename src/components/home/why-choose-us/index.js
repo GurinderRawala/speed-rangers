@@ -9,28 +9,28 @@ import StaticBackground from "./static-background";
 const WhyChooseUs = () =>{
     return(
         <div style={{position: 'relative'}}>
-             <StaticBackground img={Content.backgroundImage}/>
-                <div className="row">
-                    <div className="col-sm-8" style={{padding: 0}}>
+            <StaticBackground img={Content.backgroundImage}/>
+            <div className="row">
+                <div className="col-sm-8" style={{padding: 0}}>
                     <SectionOne 
                         title={ <IconWithDetail 
-                                icon={<MdOutlineMobileFriendly size={30}/>} 
-                                detail={Content.sectionOne.heading} 
-                                />
-                            } 
-                        data={Content.sectionOne}
+                            icon={<MdOutlineMobileFriendly size={30}/>} 
+                            detail={Content.sectionOne.heading} 
                         />
+                        } 
+                        data={Content.sectionOne}
+                    />
                 </div>
             </div>
             <div className="row flex-row-reverse">
                 <div className="col-sm-8" style={{padding: 0}}>
-                <SectionOne 
-                    title={ <IconWithDetail 
+                    <SectionOne 
+                        title={ <IconWithDetail 
                             icon={<AiFillMessage size={30}/>} 
                             detail={Content.sectionTwo.heading} 
-                            />
+                        />
                         } 
-                    data={Content.sectionTwo}
+                        data={Content.sectionTwo}
                     />
                 </div>
             </div>

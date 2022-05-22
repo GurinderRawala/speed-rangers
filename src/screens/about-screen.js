@@ -5,11 +5,11 @@ const headingImg = `https://moneyqanda.com/wp-content/uploads/2017/05/better-tru
 const AboutScreen = () =>{
     return(
         <>
-        <ScreenHeading 
-        title={"ABOUT"} 
-        img={headingImg}
-        />
-        <About />
+            <ScreenHeading 
+                title={"ABOUT"} 
+                img={headingImg}
+            />
+            <About />
         </>
     )
 }

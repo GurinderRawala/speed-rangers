@@ -12,28 +12,28 @@ const PhotoViewer = ({heading}) =>{
     return(
         <div data-aos="fade-down" style={{position: 'relative'}}>
             <div className='shade' style={{zIndex: -1}}></div>
-        <div style={Style.nextImage}>
-            <div className='App-row-flex ' 
-            style={{justifyContent: 'space-between', width: '100%'}}>
-                <NextImage image={lastImage.url}/>
-                <NextImage image={nextImage.url}/>
+            <div style={Style.nextImage}>
+                <div className='App-row-flex ' 
+                    style={{justifyContent: 'space-between', width: '100%'}}>
+                    <NextImage image={lastImage.url}/>
+                    <NextImage image={nextImage.url}/>
+                </div>
             </div>
-        </div>
-        <div className="App-header" 
-            style={{position: 'relative', minHeight: 700, justifyContent: 'space-evenly'}}>
+            <div className="App-header" 
+                style={{position: 'relative', minHeight: 700, justifyContent: 'space-evenly'}}>
                 <div className="text-center text-white">
-                <h1>{heading}</h1>
+                    <h1>{heading}</h1>
                 </div>
                 <CurrentImage image={currentImage.url}/>
                 <div className="bg-dark text-white" style={{padding: 25}}>
-                        <p>{currentImage.title.body}</p>
-                        <p style={{fontSize: 22, color: '#b12'}}>{currentImage.title.name}</p>
-                        <p>{currentImage.title.title}</p>
+                    <p>{currentImage.title.body}</p>
+                    <p style={{fontSize: 22, color: '#b12'}}>{currentImage.title.name}</p>
+                    <p>{currentImage.title.title}</p>
                 </div>
                 <ViewerControlls 
-                        actionButton={(e) => changeSlide(e)}
+                    actionButton={(e) => changeSlide(e)}
                 />
-        </div>
+            </div>
         </div>
     )
 }
